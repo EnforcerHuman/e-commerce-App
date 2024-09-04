@@ -71,7 +71,6 @@ class _StoreImage extends StatelessWidget {
   final bool isSmallScreen;
 
   const _StoreImage({
-    super.key,
     required this.imageUrl,
     required this.isSmallScreen,
   });
@@ -107,7 +106,6 @@ class _StoreHeader extends StatelessWidget {
   final bool isSmallScreen;
 
   const _StoreHeader({
-    super.key,
     required this.name,
     required this.rating,
     required this.isSmallScreen,
@@ -127,7 +125,7 @@ class _StoreHeader extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
           ),
         ),
-        SizedBox(width: 8),
+        const SizedBox(width: 8),
         Row(
           children: [
             Icon(
@@ -135,7 +133,7 @@ class _StoreHeader extends StatelessWidget {
               size: isSmallScreen ? 16 : 18,
               color: Colors.amber,
             ),
-            SizedBox(width: 4),
+            const SizedBox(width: 4),
             Text(
               rating.toString(),
               style: TextStyle(
@@ -155,7 +153,6 @@ class _StoreDetails extends StatelessWidget {
   final bool isSmallScreen;
 
   const _StoreDetails({
-    super.key,
     required this.cuisine,
     required this.deliveryTime,
     required this.isSmallScreen,
@@ -199,7 +196,6 @@ class _StoreFooter extends StatelessWidget {
   final bool isSmallScreen;
 
   const _StoreFooter({
-    super.key,
     required this.discount,
     required this.itemsAvailable,
     required this.isSmallScreen,

@@ -46,7 +46,7 @@ class ReferalCard extends StatelessWidget {
                     SizedBox(height: cardHeight * 0.05),
                     Text(
                       'Invite your friends and earn $offerPercentage off',
-                      style: TextStyles.buttonText.copyWith(
+                      style: TextStyles.buttonText1.copyWith(
                         fontSize: height * 0.02, // Responsive font size
                       ),
                     ),

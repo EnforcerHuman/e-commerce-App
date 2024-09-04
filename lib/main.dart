@@ -8,10 +8,11 @@ import 'package:task_viewer/data/data_sources/notification_remote_data_source.da
 import 'package:task_viewer/data/repositories/notification_repository_impl.dart';
 import 'package:task_viewer/domain/usecases/get_notification.dart';
 import 'package:task_viewer/presentation/bloc/notification_bloc.dart';
+import 'package:task_viewer/presentation/bloc/notification_event.dart';
 import 'package:task_viewer/presentation/screeens/home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,27 +23,27 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider<NotificationBloc>(
-          create: (context) => NotificationBloc(
-            getNotifications: GetNotifications(
-              NotificationRepositoryImpl(
-                remoteDataSource: NotificationRemoteDataSourceImpl(
-                  client: http.Client(),
-                ),
-                networkInfo: NetworkInfoImpl(
-                  InternetConnectionChecker(),
-                ),
-              ),
-            ),
-          ),
-        ),
+            create: (context) => NotificationBloc(
+                  getNotifications: GetNotifications(
+                    NotificationRepositoryImpl(
+                      remoteDataSource: NotificationRemoteDataSourceImpl(
+                        client: http.Client(),
+                      ),
+                      networkInfo: NetworkInfoImpl(
+                        InternetConnectionChecker(),
+                      ),
+                    ),
+                  ),
+                )..add(GetNotificationsEvent())),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: HomePage(),
+        home: const HomePage(),
       ),
     );
   }

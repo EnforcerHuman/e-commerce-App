@@ -7,9 +7,24 @@ class TextStyles {
     fontSize: 24,
     fontWeight: FontWeight.bold,
   );
+  static const TextStyle blackHeadLine1 = TextStyle(
+    color: AppColors.primaryTextColor,
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+  );
+  static const TextStyle headline2 = TextStyle(
+    color: AppColors.primaryTextColor,
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  );
 
-  static const TextStyle buttonText = TextStyle(
+  static const TextStyle buttonText1 = TextStyle(
     color: AppColors.territoryTextColor,
+    fontSize: 16,
+  );
+
+  static const TextStyle homeScreenTextButton = TextStyle(
+    color: AppColors.primaryColor,
     fontSize: 16,
   );
 }

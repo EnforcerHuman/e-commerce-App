@@ -36,7 +36,7 @@ class NotificationCard extends StatelessWidget {
             children: [
               Image.asset(
                 errorBuilder: (context, error, stackTrace) {
-                  return const Text('NO IMAGE');
+                  return const Center(child: Text('NO IMAGE'));
                 },
                 imagePath,
                 width: 40,

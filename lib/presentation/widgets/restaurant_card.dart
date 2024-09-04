@@ -65,7 +65,7 @@ class RestaurantCard extends StatelessWidget {
                       color: Colors.grey[600],
                     ),
                   ),
-                  SizedBox(height: spacing),
+                  const SizedBox(height: spacing),
                   Row(
                     children: [
                       Icon(Icons.location_on,
@@ -75,7 +75,7 @@ class RestaurantCard extends StatelessWidget {
                         style: TextStyle(
                             fontSize: textSize * 0.8, color: Colors.grey[600]),
                       ),
-                      SizedBox(width: spacing),
+                      const SizedBox(width: spacing),
                       Icon(Icons.star,
                           size: textSize * 0.8, color: Colors.amber),
                       Text(
@@ -85,7 +85,7 @@ class RestaurantCard extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(width: spacing),
+                      const SizedBox(width: spacing),
                       Icon(Icons.access_time,
                           size: textSize * 0.8, color: Colors.grey[600]),
                       Text(
