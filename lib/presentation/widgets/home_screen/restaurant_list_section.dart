@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:task_viewer/presentation/widgets/restaurant_card.dart';
 import 'package:task_viewer/presentation/widgets/title_with_button.dart';
 
-class BuildRestaurantCard extends StatelessWidget {
-  const BuildRestaurantCard({super.key});
+class RestaurantListSection extends StatelessWidget {
+  const RestaurantListSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +14,7 @@ class BuildRestaurantCard extends StatelessWidget {
           buttonText: 'view all',
         ),
         ListView.builder(
+          physics: const NeverScrollableScrollPhysics(),
           shrinkWrap: true,
           itemCount: 2,
           itemBuilder: (context, index) {

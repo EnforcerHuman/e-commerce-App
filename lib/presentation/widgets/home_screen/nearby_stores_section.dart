@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:task_viewer/presentation/widgets/nearby_store_card.dart';
 import 'package:task_viewer/presentation/widgets/title_with_button.dart';
 
-class BuildNearbyStores extends StatelessWidget {
-  const BuildNearbyStores({super.key});
+class NearbyStoresSection extends StatelessWidget {
+  const NearbyStoresSection({super.key});
 
   @override
   Widget build(BuildContext context) {

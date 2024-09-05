@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:task_viewer/presentation/screeens/notification_page.dart';
 import 'package:task_viewer/presentation/widgets/common/search_bar.dart';
 
-class BuildSerchSection extends StatelessWidget {
-  const BuildSerchSection({super.key});
+class SerchSection extends StatelessWidget {
+  const SerchSection({super.key});
 
   @override
   Widget build(BuildContext context) {

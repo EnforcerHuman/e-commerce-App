@@ -31,7 +31,7 @@ class NearbyStoreCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           _StoreImage(
-            imageUrl: imageUrl,
+            imageUrl: 'assets/images/nearby_store.png',
             isSmallScreen: isSmallScreen,
           ),
           SizedBox(width: isSmallScreen ? 12 : 16),
@@ -79,7 +79,7 @@ class _StoreImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(8.0),
-      child: Image.network(
+      child: Image.asset(
         imageUrl,
         width: isSmallScreen ? 80 : 100,
         height: isSmallScreen ? 80 : 100,

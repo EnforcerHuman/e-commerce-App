@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:task_viewer/presentation/widgets/advertisement_card.dart';
 import 'package:task_viewer/presentation/widgets/title_with_button.dart';
 
-class BuildAdvertisement extends StatelessWidget {
-  const BuildAdvertisement({super.key});
+class AdvertisementSection extends StatelessWidget {
+  const AdvertisementSection({super.key});
 
   @override
   Widget build(BuildContext context) {

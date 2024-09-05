@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:task_viewer/presentation/widgets/category_card.dart';
 
-class BuildCategories extends StatelessWidget {
-  const BuildCategories({super.key});
+class CategoriesSection extends StatelessWidget {
+  const CategoriesSection({super.key});
 
   @override
   Widget build(BuildContext context) {
