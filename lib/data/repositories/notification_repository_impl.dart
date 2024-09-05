@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:task_viewer/core/error/failures.dart';
 import 'package:task_viewer/core/network/network_info.dart';
 import 'package:task_viewer/data/data_sources/notification_remote_data_source.dart';
-import 'package:task_viewer/data/repositories/notification_repository.dart';
+import 'package:task_viewer/domain/repositories/notification_repository.dart';
 import 'package:task_viewer/domain/entities/notification.dart';
 
 class NotificationRepositoryImpl implements NotificationRepository {

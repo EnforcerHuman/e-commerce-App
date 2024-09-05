@@ -3,7 +3,7 @@ import 'package:equatable/equatable.dart';
 import 'package:task_viewer/core/error/failures.dart';
 import 'package:task_viewer/core/usecase/usecase.dart';
 import 'package:task_viewer/domain/entities/notification.dart';
-import 'package:task_viewer/data/repositories/notification_repository.dart';
+import 'package:task_viewer/domain/repositories/notification_repository.dart';
 
 class GetNotifications
     implements UseCase<List<Notifications>, GetNotificationsParams> {
