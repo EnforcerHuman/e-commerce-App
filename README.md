@@ -9,8 +9,7 @@ This Flutter application consists of two screens: a Home Screen and a Notificati
 - Implement two screens based on Figma designs: Home Screen and Notifications Screen.
 - Fetch and parse JSON data from a provided API endpoint.
 - Utilize clean architecture for project organization and BLoC for state management.
-- Optional: Use isolates for background processing to enhance performance.
-- Optional: Write unit tests to verify critical parts of the application.
+
 
 ## Getting Started
 
